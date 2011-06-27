@@ -1,4 +1,12 @@
-Data can be found top_1000_sites.tsv
+Google's list of the top 1000 sites on the web, based on data gathered by DoubleClick.
+
+Result data can be found top_1000_sites.tsv
+
+To run, just redirect output of top_1000_sites.py to a file. In my case, I ran 
+
+python -i top_1000_sites.py > top_1000_sites.tsv
+
+to produce top_1000_sites.tsv
 
 data sourced from http://www.google.com/adplanner/static/top1000/
 
