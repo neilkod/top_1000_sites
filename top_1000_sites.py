@@ -12,7 +12,7 @@ def clean_number(txt):
 # get the column names
 columns = soup.find('table',{'width':"100%", 'border':"0", 'cellspacing': "0",
 	'cellpadding': "0"}).findAll('th')
-headers = [x.text for x in columns]
+headers = [x.text.replace(' ','_') for x in columns]
 print '\t'.join(headers)
 
 # get the data
